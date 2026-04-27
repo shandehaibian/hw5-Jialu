@@ -1,0 +1,32 @@
+{
+  "participants": ["Alice", "Bob", "Carol", "Dave"],
+  "settlement_currency": "USD",
+  "expenses": [
+    {
+      "description": "Dinner",
+      "paid_by": "Alice",
+      "amount": 120.00,
+      "split_among": ["Alice", "Bob", "Carol", "Dave"],
+      "split_type": "equal"
+    },
+    {
+      "description": "Drinks",
+      "paid_by": "Bob",
+      "amount": 60.00,
+      "split_among": ["Bob", "Carol"],
+      "split_type": "equal"
+    },
+    {
+      "description": "Hotel (weighted)",
+      "paid_by": "Carol",
+      "amount": 200.00,
+      "split_type": "percentage",
+      "splits": {
+        "Alice": 0.25,
+        "Bob": 0.25,
+        "Carol": 0.25,
+        "Dave": 0.25
+      }
+    }
+  ]
+}
