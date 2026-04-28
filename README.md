@@ -125,3 +125,9 @@ The script raises a `ValueError` with a descriptive message on bad input (mismat
 | **¥ still requires user confirmation** | The script correctly labels output, but if the user does not clarify upfront, the conversation stalls waiting for their answer before any calculation runs. |
 | **Rounding accumulation** | With many expenses and many participants, repeated floating-point rounding can cause the net-balance sanity check to trip on legitimate data. A future fix would use `decimal.Decimal` throughout. |
 | **No partial-payment support** | If someone has already paid back part of their debt outside this system, the skill has no way to account for it without the user manually adjusting the input amounts. |
+
+---
+
+## Demo
+
+Watch a walkthrough of the skill in action: [https://www.youtube.com/watch?v=7qTCA8n2hGY](https://www.youtube.com/watch?v=7qTCA8n2hGY)
